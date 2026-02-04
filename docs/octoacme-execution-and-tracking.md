@@ -9,24 +9,32 @@ Guidance for managing day-to-day execution and tracking progress toward project 
 - Demo/Review at the end of each sprint or milestone
 
 ## Workflows
-- Use the project board (e.g., GitHub Projects) with columns: Backlog, Ready, In Progress, In Review, QA, Done
+- Use the project board (e.g., GitHub Projects) with columns: Backlog, Ready, In Progress, In Review, QA Testing, QA Approved, Done
 - Pull Request workflow:
   - Small PRs (<= 400 lines when possible)
   - Include issue link and acceptance criteria in PR description
   - Run automated tests and linting in CI before requesting review
+  - Design Lead reviews UI/UX implementation for visual changes
   - Require at least one approval before merging (or team-defined policy)
+  - QA Lead validates acceptance criteria are met before marking done
 
 ## Quality & Testing
-- Unit tests for new logic
-- Integration tests where applicable
-- End-to-end smoke tests for critical flows before release
-- Security scanning in CI
-- Manual QA for feature acceptance when needed
+- **Unit tests** for new logic (Developers)
+- **Integration tests** where applicable (Developers, QA Lead)
+- **End-to-end smoke tests** for critical flows before release (QA Lead)
+- **Security scanning** in CI (DevOps Engineer)
+- **Manual QA testing** for feature acceptance (QA Lead)
+- **UX validation** to ensure implementation matches design (Design Lead)
+- **Performance and load testing** for high-traffic features (DevOps Engineer)
+- **Accessibility testing** to ensure inclusive design (Design Lead, QA Lead)
 
 ## Reporting & Metrics
 - Track velocity and burndown
 - Monitor success metrics identified in the Project One-pager
-- Use dashboards for key signals (errors, latency, usage)
+- Use dashboards for key signals (errors, latency, usage) - maintained by DevOps Engineer
+- Track QA metrics: test coverage, defect density, test pass rate (QA Lead)
+- Monitor customer satisfaction and support ticket trends (Support Lead)
+- Review design iteration metrics and usability test results (Design Lead)
 
 ## Blocker Escalation
 - Level 1: Team-level triage in daily standup
@@ -35,6 +43,9 @@ Guidance for managing day-to-day execution and tracking progress toward project 
 
 ## Execution Checklist
 - [ ] Branching and PR conventions documented in repo
-- [ ] CI configured for tests and lint
-- [ ] Regular demos scheduled
-- [ ] Risk register updated weekly
+- [ ] CI configured for tests, lint, and security scans (DevOps Engineer)
+- [ ] Monitoring and alerting dashboards set up (DevOps Engineer)
+- [ ] Regular demos scheduled with Design Lead reviewing UX implementation
+- [ ] QA test cases documented and tracked (QA Lead)
+- [ ] Risk register updated weekly with all role inputs
+- [ ] Customer feedback channels established (Support Lead)

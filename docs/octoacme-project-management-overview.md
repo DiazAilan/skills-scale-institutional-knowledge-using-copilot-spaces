@@ -14,26 +14,34 @@ Applies to all cross-functional projects that deliver product features, services
 - Psychological safety: encourage feedback and learning.
 
 ## Core Roles
-- Project Manager (PM): coordinates delivery, schedules, risk, communications.
-- Product Manager (PdM): defines outcomes, prioritizes backlog, and measures success.
-- Developers: implement features, collaborate on design and testability.
-- QA/Testing: validate quality and acceptance criteria.
-- Stakeholders: provide inputs and approvals.
+- **Project Manager (PM)**: coordinates delivery, schedules, risk, communications.
+- **Product Manager (PdM)**: defines outcomes, prioritizes backlog, and measures success.
+- **Developers**: implement features, collaborate on design and testability.
+- **Design Lead / UX Designer**: owns user experience design, creates wireframes and prototypes, conducts usability testing.
+- **QA Lead**: defines test strategy, validates quality and acceptance criteria, manages bug tracking.
+- **DevOps / Infrastructure Engineer**: manages CI/CD pipelines, deployments, monitoring, and infrastructure.
+- **Business Analyst**: gathers and documents requirements, analyzes data, bridges business and technical teams.
+- **Support Lead / Customer Success**: communicates with customers, triages feedback, represents customer voice.
+- **Stakeholders**: provide inputs and approvals.
 
 ## Key Artifacts
-- Project Charter / One-pager
-- Roadmap and Release Plan
-- Sprint/Iteration Backlog
-- Acceptance Criteria & Definition of Done
-- Risk Register
-- Retrospective notes and action items
+- **Project Charter / One-pager**: problem statement, objectives, success metrics
+- **Roadmap and Release Plan**: milestones, timelines, dependencies
+- **Sprint/Iteration Backlog**: prioritized work items with acceptance criteria
+- **Design Artifacts**: wireframes, mockups, prototypes, design specifications
+- **Test Plans & QA Sign-off**: test strategy, test cases, quality gates
+- **Acceptance Criteria & Definition of Done**: feature requirements and completion standards
+- **Infrastructure & Deployment Plans**: CI/CD configuration, deployment runbooks
+- **Risk Register**: identified risks, mitigations, owners
+- **Customer Communication Plan**: release notes, user notifications, support documentation
+- **Retrospective notes and action items**: learnings and continuous improvement actions
 
 ## Lifecycle (high-level)
-1. Initiation: problem statement, stakeholders, high-level timeline.
-2. Planning: scope, resources, milestones, dependencies.
-3. Execution: build, test, review, iterate.
-4. Release: deploy, verify, announce.
-5. Close & Retrospective: capture learnings and next steps.
+1. **Initiation**: problem statement, stakeholders, high-level timeline. Business Analyst helps gather requirements.
+2. **Planning**: scope, resources, milestones, dependencies. Design Lead creates UX plans, QA Lead drafts test strategy, DevOps plans infrastructure needs.
+3. **Execution**: build, test, review, iterate. Developers implement, QA validates, Design reviews UI/UX implementation.
+4. **Release**: deploy, verify, announce. DevOps manages deployment, QA provides sign-off, Support Lead coordinates customer communications.
+5. **Close & Retrospective**: capture learnings and next steps. All roles contribute insights for continuous improvement.
 
 ## Communication Cadence
 - Weekly sync between PM + PdM
